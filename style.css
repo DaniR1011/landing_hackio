@@ -200,6 +200,14 @@ footer{
     .header{
         background-color: aqua;
     }
+    .prueba{
+        background-color: white;
+        color: black;
+        width: 80%;
+    }
+    .infoContainer > h1 {
+        width: 100%;
+    }
     .logo {
         width: 50px;
     }
