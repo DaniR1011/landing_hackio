@@ -215,6 +215,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
+        width: 100%;
     }
     .portada {
         width: 100%;
