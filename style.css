@@ -1,0 +1,256 @@
+/* Importación fuente */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reseteo de estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+}
+
+/* Estilos para el html */
+html {
+    background-color: whitesmoke;
+}
+
+/* Estilos header */
+header{
+    height: 15vh;
+    background-color: #5c2146;
+    text-align: center;
+    align-items: center;
+}
+
+.lynx{
+    width: 200px;
+}
+
+.logo{
+    width: 20%;
+}
+
+/* Estilos main */
+main{
+    min-height: 75vh;
+}
+
+/* Primer section */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0px 80px;
+    background: linear-gradient(180deg, #5c2146 31%, #FAF3E300 95%);
+    margin-bottom: 100px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+.infoContainer > h1 {
+    font-size: 3rem;
+}
+
+.infoContainer > button {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.users{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.portada{
+    width: 25%;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    margin: 0px 30px;
+    margin-bottom: 30px;
+}
+
+.card > h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #5c2146;
+}
+
+.card > h4 {
+    width: 70%;
+    font-weight: 400;
+}
+
+.cardImg {
+    width: 50%;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #5c2146;
+}
+
+.buttonCard  {
+    height: 45px;
+    background-color: #5c2146;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+    width: 40%;
+    cursor: pointer;
+}
+
+/* Estilos footer */
+footer{
+    height: 10vh;
+}
+
+.firstFooterSection{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    gap: 40px;
+}
+
+.firstFooterSection > article > p {
+    text-align: justify;
+}
+
+.secondFooterSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 60px;
+}
+
+.secondFooterSection > article > iframe {
+    width: 400px;
+    height: 200px;
+}
+
+.secondArticleFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.secondArticleFooter > h2 {
+    width: 60%;
+    text-align: center;
+    color: #5c2146;
+}
+
+.secondArticleFooter > h4 {
+    font-weight: 400;
+    color: #5c2146;
+}
+
+.footerButton{
+    height: 45px;
+    background-color: #5c2146;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+    width: 40%;
+    cursor: pointer;
+}
+
+.footerImg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.footerImg > img {
+    width: 20%;
+}
+
+/* Mediaqueries */
+@media (max-width: 700px) {
+    .header{
+        background-color: aqua;
+    }
+    .logo {
+        width: 50px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .portada {
+        width: 100%;
+    }
+    .firstFooterSection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .secondFooterSection {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .secondFooterSection > article > iframe {
+        width: 100%;
+    }
+    .card > h1{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .card > h4 {
+        width: 100%;
+        text-align: justify;
+    }
+    .cardImg {
+        width: 100%;
+    }
+    .buttonCard {
+        width: 100%;
+    }
+    .secondArticleFooter > h2{
+        width: 100%;
+        text-align: justify;
+        text-align: center;
+    }
+    .footerImg{
+        width: 100%;
+    }
+    .footerImg > img {
+        width: 60px;
+    }
+    .footerButton{
+        width: 100%;
+    }
+    .infoContainer > button {
+        width: 80%;
+    }
+}
